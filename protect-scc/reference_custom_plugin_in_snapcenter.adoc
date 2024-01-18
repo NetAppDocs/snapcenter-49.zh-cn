@@ -1,0 +1,216 @@
+---
+permalink: protect-scc/reference_custom_plugin_in_snapcenter.html 
+sidebar: sidebar 
+keywords: Custom plug-in 
+summary: 可以使用 SnapCenter 服务器将创建的自定义插件安装在主机上，以便为应用程序启用数据保护。 
+---
+= SnapCenter 中的自定义插件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+
+
+== SnapCenter 中的自定义插件
+
+可以使用 SnapCenter 服务器将使用 Java ， Perl 或原生模式创建的自定义插件安装在主机上，以便为应用程序启用数据保护。您必须已导出此插件，才能使用本教程中提供的操作步骤将其安装到 SnapCenter 主机上。
+
+
+
+=== 创建插件问题描述文件
+
+对于创建的每个插件，您都必须具有一个问题描述文件。问题描述文件介绍了此插件的详细信息。文件名必须为 Plugin_Descriptioner.xml 。
+
+
+
+==== 使用插件描述符文件属性及其重要性
+
+|===
+| 属性 | Description 
+
+
+ a| 
+Name
+ a| 
+插件的名称。允许使用字母数字字符。例如， DB2 ， MySQL ， MongoDB
+
+对于以原生模式创建的插件，请确保不提供文件扩展名。例如，如果此插件的名称是 MongoDB.sh ，请将此名称指定为 MongoDB 。
+
+
+
+ a| 
+version
+ a| 
+插件版本。可以包括主要版本和次要版本。例如， 1.0 ， 1.1 ， 2.0 ， 2.1
+
+
+
+ a| 
+displayName
+ a| 
+要在SnapCenter服务器中显示的插件名称。如果写入了同一插件的多个版本，请确保所有版本的显示名称相同。
+
+
+
+ a| 
+插件类型
+ a| 
+用于创建插件的语言。支持的值包括 Perl ， Java 和原生。
+原生插件类型包括 Unix/Linux Shell 脚本， Windows 脚本， Python 或任何其他脚本语言。
+
+
+
+ a| 
+OSNAME
+ a| 
+安装此插件的主机操作系统名称。有效值为Windows和
+Linux。可以在多种操作系统类型上部署一个插件，例如 Perl 类型的插件。
+
+
+
+ a| 
+操作系统配置
+ a| 
+安装了插件的主机操作系统版本。
+
+
+
+ a| 
+资源名称
+ a| 
+插件可以支持的资源类型的名称。例如、数据库、实例、
+集合。
+
+
+
+ a| 
+父级
+ a| 
+如果ResourceName在层次结构上依赖于其他资源类型、则
+parent用于确定父ResourceType。
+
+例如，在 DB2 插件中， ResourceName " 数据库 " 具有父 " 实例 " 。
+
+
+
+ a| 
+RequireFileSystemPlugin
+ a| 
+是或否确定恢复选项卡是否为
+显示在还原向导中。
+
+
+
+ a| 
+ResourceRequireAuthentication
+ a| 
+是或否确定自动发现的资源还是尚未发现的资源
+自动发现需要凭据才能在之后执行数据保护操作
+正在发现存储。
+
+
+
+ a| 
+RequireFileSystemClone
+ a| 
+是或否确定此插件是否需要与FileSystem插件集成才能进行克隆
+工作流。
+
+|===
+以下是自定义插件 DB2 的 Plugin_descriptor.xml 文件示例：
+
+....
+<Plugin>
+<SMSServer></SMSServer>
+<Name>DB2</Name>
+<Version>1.0</Version>
+<PluginType>Perl</PluginType>
+<DisplayName>Custom DB2 Plugin</DisplayName>
+<SupportedOS>
+<OS>
+<OSName>windows</OSName>
+<OSVersion>2012</OSVersion>
+</OS>
+<OS>
+<OSName>Linux</OSName>
+<OSVersion>7</OSVersion>
+</OS>
+</SupportedOS>
+<ResourceTypes>
+<ResourceType>
+<ResourceName>Database</ResourceName>
+<Parent>Instance</Parent>
+</ResourceType>
+<ResourceType>
+<ResourceName>Instance</ResourceName>
+</ResourceType>
+</ResourceTypes>
+<RequireFileSystemPlugin>no</RequireFileSystemPlugin>
+<ResourceRequiresAuthentication>yes</ResourceRequiresAuthentication>
+<SupportsApplicationRecovery>yes</SupportsApplicationRecovery>
+</Plugin>
+....
+
+
+=== 创建 ZIP 文件
+
+开发插件并创建描述符文件后、必须添加插件文件和
+将Plugin_descriptor.xml文件压缩到一个文件夹中、然后将其压缩。
+
+在创建 ZIP 文件之前，您必须考虑以下事项：
+
+* 脚本名称必须与插件名称相同。
+* 对于Perl插件、ZIP文件夹必须包含一个包含脚本文件和的文件夹
+描述符文件必须位于此文件夹之外。文件夹名称必须与相同
+插件名称。
+* 对于Perl插件以外的插件、ZIP文件夹必须包含描述符和
+脚本文件。
+* 操作系统版本必须为数字。
+
+
+示例
+
+* DB2 插件：将 db2.pm 和 Plugin_descriptor.xml 文件添加到 "db2.zip " 中。
+* 使用Java开发的插件：添加jar文件、相关jar文件和
+将Plugin_descriptor.xml文件压缩到一个文件夹并将其压缩。
+
+
+
+
+=== 上传插件 ZIP 文件
+
+您必须将此插件ZIP文件上传到SnapCenter服务器、才能使用此插件
+部署在所需主机上。
+
+您可以使用 UI 或 cmdlet 上传此插件。
+
+* 用户界面： *
+
+* 在 * 添加 * 或 * 修改主机 * 工作流向导中上传插件 ZIP 文件
+* 单击 * " 选择以上传自定义插件 "*
+
+
+* PowerShell ： *
+
+* upload-SmPluginPackage cmdlet
++
+例如， PS> Upload — SmPluginPackage — AbsolutePath c ： \DB2_1.zip
+
++
+有关PowerShell cmdlet的详细信息、请使用SnapCenter cmdlet帮助或
+请参见cmdlet参考信息。
+
+
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205["《 SnapCenter 软件 cmdlet 参考指南》"^]。
+
+
+
+=== 部署自定义插件
+
+现在、上传的自定义插件可作为的一部分部署在所需主机上
+*添加*和*修改Host*工作流。您可以将多个版本的插件上传到
+SnapCenter服务器、您可以选择要在特定主机上部署的所需版本。
+
+有关如何上传此插件的详细信息，请参见： link:task_add_hosts_and_install_plug_in_packages_on_remote_hosts_scc.html["添加主机并在远程主机上安装插件软件包"]
