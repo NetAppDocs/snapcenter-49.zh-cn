@@ -8710,4 +8710,8 @@ _\https：//SnapCenter.YAML_&lt;SnapCenter_port&gt;&lt;SnapCenter_IP_address_or_
   <block id="66533c4e3134a6b220ad1336cd288c49" category="sidebar">配置基于角色的访问控制（ RBAC ）</block>
   <block id="5d4caff07857398d579cdda92ce3f34f" category="sidebar">配置存储系统</block>
   <block id="0daccd45abdac281e7508c5de0fa492c" category="sidebar">在 Windows 主机上配置存储</block>
+  <block id="4db35e04fa48549bd85b1a6d4d43fb09" category="list-text">SnapCenter 4.9 P1及更高版本支持在基于Amazon Web Services (AWS)的VMware Cloud软件定义的数据中心(SDDC)环境中保护Oracle和Microsoft SQL工作负载。</block>
+  <block id="38012dbc6542f17135111019d1839fa1" category="inline-link">在AWS SDDC环境中的VMware Cloud中使用NetApp SnapCenter保护Oracle、MS SQL工作负载</block>
+  <block id="0ed5dc7c29240e260dcaa51a555687fb" category="paragraph">有关详细信息，请参见
+<block ref="201ce3916702c203a3d45750d51a4039" category="inline-link-rx"></block>。</block>
 </blocks>
