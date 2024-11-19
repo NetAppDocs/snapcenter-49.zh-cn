@@ -19,12 +19,12 @@ summary: 在环境中安装适用于 Microsoft SQL Server 的 SnapCenter 插件�
 
 以下工作流显示了必须执行备份操作的顺序：
 
-image::../media/scsql_backup_workflow.png[SCSQL 备份工作流]
+image::../media/scsql_backup_workflow.gif[SCSQL 备份工作流]
 
 
 NOTE: 如果选择非 NetApp LUN ，已损坏的数据库或正在还原的数据库，则 " 资源 " 页面上的 " 立即备份 " ， " 还原 " ， " 管理备份 " 和 " 克隆 " 选项将被禁用。
 
-您也可以手动或在脚本中使用 PowerShell cmdlet 执行备份，还原，恢复，验证和克隆操作。有关 PowerShell cmdlet 的详细信息，请使用 SnapCenter cmdlet 帮助或参见 https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205["《 SnapCenter 软件 cmdlet 参考指南》"]
+您也可以手动或在脚本中使用 PowerShell cmdlet 执行备份，还原，恢复，验证和克隆操作。有关PowerShell cmdlet的详细信息、请使用SnapCenter cmdlet帮助或参阅 https://docs.netapp.com/us-en/snapcenter-cmdlets-49/index.html["《 SnapCenter 软件 cmdlet 参考指南》"]
 
 
 

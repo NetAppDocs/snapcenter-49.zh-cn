@@ -26,14 +26,13 @@ link:task_back_up_resource_groups_sap_hana.html["备份资源组"]
 
 * 如果要在一个或多个租户数据库关闭时创建基于文件的备份、请在HANA属性文件中使用将allow_file_based _backup_IFINACTIVE_tenants_present参数设置为*是* `Set-SmConfigSettings` cmdlet。
 +
-有关可与 cmdlet 结合使用的参数及其说明的信息，可通过运行 get-help _command_name_ 来获取。或者，您也可以参考 https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205["《 SnapCenter 软件 cmdlet 参考指南》"]
+有关可与 cmdlet 结合使用的参数及其说明的信息，可通过运行 get-help _command_name_ 来获取。或者、您也可以参考 https://docs.netapp.com/us-en/snapcenter-cmdlets-49/index.html["《 cmdlet 参考指南》"^]
 
 * 对于用于暂停、Snapshot副本和取消静默操作的预后和后命令、您应通过以下路径检查这些命令是否位于插件主机上的命令列表中：
 +
-对于Windows：_C：\Program Files\NetApp\SnapCenter\SnapCenter Plug-in Creator\etc\allowed_commands_list.txt
+** 对于Windows：_C：\Program Files\NetApp\SnapCenter\SnapCenter Plug-in Creper\ETC\ALLOWED_commands.config_
+** Linux：_/var//opt/linux/SCC/ALLOED_commands.config SnapCenter
 
-+
-对于Linux：/var/opt/snapcenter/scC/allowed_commands_list.txt
 
 
 
@@ -44,7 +43,7 @@ NOTE: 如果命令列表中不存在这些命令、则操作将失败。
 . 在左侧导航窗格中，选择*Resoles*，然后从列表中选择相应的插件。
 . 在资源页面中，根据资源类型从 * 视图 * 下拉列表中筛选资源。
 +
-选择*image:../media/filter_icon.png[""]* ，然后选择主机名和资源类型以筛选资源。然后、您可以选择 image:../media/filter_icon.png[""] 以关闭筛选器窗格。
+选择image:../media/filter_icon.gif["筛选器图标"]，然后选择主机名和资源类型以筛选资源。然后、您可以选择 image:../media/filter_icon.gif["筛选器图标"] 关闭筛选器窗格。
 
 . 选择要备份的资源。
 . 在资源页面中，选择 * 对 Snapshot 副本使用自定义名称格式 * ，然后输入要用于 Snapshot 副本名称的自定义名称格式。
@@ -107,7 +106,7 @@ SnapCenter 以使用适用于 Windows 的插件将文件系统置于一致状态
 
 |===
 +
-image:../media/application_settings.gif[""]
+image:../media/application_settings.gif["应用程序设置"]
 
 
 
@@ -116,12 +115,12 @@ image:../media/application_settings.gif[""]
 .. 从下拉列表中选择一个或多个策略。
 +
 
-NOTE: 您也可以单击 * 来创建策略image:../media/add_policy_from_resourcegroup.gif[""]*
+NOTE: 您也可以通过单击来创建策略 image:../media/add_policy_from_resourcegroup.gif["从资源组添加策略"]。
 
 +
 在为选定策略配置计划部分中，将列出选定策略。
 
-.. 选择*image:../media/add_policy_from_resourcegroup.gif[""]* 。
+.. 在配置计划列中、为要配置计划的策略选择image:../media/add_policy_from_resourcegroup.gif["从资源组添加策略"]。
 .. 在为policy _policy_name_添加计划对话框中，配置该计划，然后选择*OK*。
 +
 _policy_name_ 是所选策略的名称。

@@ -20,7 +20,7 @@ summary: 资源组是一个容器、您可以在其中添加要备份和保护�
 
 下图显示了数据库的资源，资源组和策略之间的关系：
 
-image::../media/sco_resourcegroup_policy.gif[SCO 资源组策略]
+image::../media/sco_resourcegroup_policy.gif[资源组策略]
 
 .步骤
 . 在左侧导航窗格中，选择*Resoles*，然后从列表中选择相应的插件。

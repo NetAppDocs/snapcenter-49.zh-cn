@@ -139,7 +139,7 @@ NOTE: 无法使用 SnapCenter 图形用户界面删除试用许可证（序列�
 .步骤
 . 在左侧导航窗格中，选择*Settings*。
 . 在设置页面中，选择*软件*。
-. 在“软件”页面的“许可证”部分中，选择*Add*(image:../media/add_policy_from_resourcegroup.gif["一个加号图标"]）。
+. 在“软件”页面的“许可证”部分中，选择*Add*。
 . 在添加 SnapCenter 许可证向导中，选择以下方法之一以获取要添加的许可证：
 +
 |===

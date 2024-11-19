@@ -84,7 +84,7 @@ Tags
 
 |===
 +
-image:../media/application_settings.gif[""]
+image:../media/application_settings.gif["应用程序设置"]
 
 .. 单击 * 脚本 * 箭头，然后输入用于暂停， Snapshot 副本和取消静默操作的 PRE 和 POST 命令。此外，您还可以输入在发生故障时退出之前要执行的 PRE 命令。
 .. 单击 * 自定义配置 * 箭头，然后输入使用此资源执行所有数据保护操作所需的自定义密钥值对。
@@ -199,12 +199,12 @@ SnapCenter 以创建存储级别的 Snapshot 副本
 .. 从下拉列表中选择一个或多个策略。
 +
 
-NOTE: 您也可以单击 * 来创建策略image:../media/add_policy_from_resourcegroup.gif[""]*
+NOTE: 您也可以通过单击来创建策略 image:../media/add_policy_from_resourcegroup.gif["从资源组添加策略"]。
 
 +
 这些策略将在为选定策略配置计划部分列出。
 
-.. 在配置计划列中，单击 *image:../media/add_policy_from_resourcegroup.gif[""]* 表示要配置的策略。
+.. 在配置计划列中、单击image:../media/add_policy_from_resourcegroup.gif["从资源组添加策略"]要配置的策略。
 .. 在添加策略 _policy_name_ 的计划对话框中，配置计划，然后单击 * 确定 * 。
 +
 其中， policy_name 是选定策略的名称。

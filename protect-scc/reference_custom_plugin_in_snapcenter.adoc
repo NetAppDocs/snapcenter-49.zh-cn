@@ -203,7 +203,7 @@ RequireFileSystemClone
 
 
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205["《 SnapCenter 软件 cmdlet 参考指南》"^]。
+https://docs.netapp.com/us-en/snapcenter-cmdlets-49/index.html["《 SnapCenter 软件 cmdlet 参考指南》"^](英文)
 
 
 

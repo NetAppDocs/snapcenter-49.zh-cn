@@ -107,7 +107,7 @@ NOTE: 要成功执行删除操作，您必须确保 RAC 环境中的所有节点
 
 |===
 +
-image:../media/sco_backuppolicy_prunning.gif[""]
+image:../media/sco_backuppolicy_prunning.gif["正在打印备份策略"]
 
 
 

@@ -201,7 +201,7 @@ Oracle 主目录，用户名和组详细信息会自动从源数据库中填充�
 
 .. 在 Database parameter settings 部分中，修改用于初始化数据库的预先填充的数据库参数值。
 +
-您可以单击 * 来添加其他参数image:../media/add_policy_from_resourcegroup.gif[""]*
+您可以通过单击来添加其他参数image:../media/add_policy_from_resourcegroup.gif["从资源组添加策略"]。
 
 +
 如果您使用的是 Oracle 标准版，并且数据库以归档日志模式运行，或者您希望从归档重做日志还原数据库，请添加参数并指定路径。
