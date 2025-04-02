@@ -37,7 +37,6 @@
   <block id="9f2c74676fb5b339a2fd4a0ccd75bd1e" category="list-text">从灾难恢复备份中的适用于 SQL Server 的 SnapCenter 插件文件夹导入 Windows 和 SQL 计划。</block>
   <block id="30f60d67f457bb040dffde52197a54da" category="paragraph-title">相关信息</block>
   <block id="27e7993c4841ae5fd670cdd945ccb96d" category="inline-link-macro">灾难恢复 API</block>
-  <block id="ab9238ca6f628634f6f6f2cf63502cdb" category="paragraph">请参见 <block ref="44de5c9fafab2e4e76e19e3717abc2e2" category="inline-link-macro-rx"></block> 视频。</block>
   <block id="d2323db6aa3f6333b1375db7f025bd4e" category="summary">您可以使用 PowerShell cmdlet 备份 SQL Server 数据库或 Windows 文件系统。其中包括备份 SQL Server 数据库或 Windows 文件系统，包括与 SnapCenter 服务器建立连接，发现 SQL Server 数据库实例或 Windows 文件系统，添加策略，创建备份资源组，备份和验证备份。</block>
   <block id="c90de0347e94ade70c96034e2ffca3ba" category="list-text">您必须已准备好 PowerShell 环境以执行 PowerShell cmdlet 。</block>
   <block id="38d7f66964588305ed5bee44db007183" category="list-text">您必须已添加存储系统连接并创建凭据。</block>
@@ -3016,7 +3015,6 @@ NetApp®Single Mailbox Recovery已于2023年5月12日终止提供(EOA)。在支�
   <block id="f367d650e57088caf7b808e01235016d" category="inline-link">如何使用 SnapCenter 从 SMBR 中的二级存储还原</block>
   <block id="41b4c689a8b0e3ba8bfecb2a1e608e46" category="list-text"><block ref="41b4c689a8b0e3ba8bfecb2a1e608e46" category="inline-link-rx"></block></block>
   <block id="f004280f6db6ea5f9302c9851388d751" category="inline-link">使用 SMBR 从 SnapVault 恢复 Microsoft Exchange 邮件</block>
-  <block id="1b0fb59a5bc951f7dc82cb43fe362145" category="list-text"><block ref="00a76af185a73b84e54e96058031aef5" category="inline-link-rx"></block></block>
   <block id="a60fa87356b70c5ce00706b76533d56c" category="summary">您应从 SnapCenter 用户界面中安装适用于 Exchange 的插件。但是，如果由于某种原因而无法运行此插件，则可以通过 Windows 命令行在无人参与的情况下以静默模式运行适用于 Exchange 的插件安装程序。</block>
   <block id="d09d97061d337ca456268467edcaf423" category="doc">通过命令行以静默方式安装适用于 Exchange 的 SnapCenter 插件</block>
   <block id="cd61155a270b0e3cba1a35778af0b9ce" category="list-text">您必须已备份 Microsoft Exchange Server 资源。</block>
@@ -8711,4 +8709,6 @@ _\https：//SnapCenter.YAML_&lt;SnapCenter_port&gt;&lt;SnapCenter_IP_address_or_
   <block id="df572e132ba2f886e42786dc14efa7eb" category="paragraph">有关可与 cmdlet 结合使用的参数及其说明的信息，可通过运行 _get-help command_name_ 来获取。或者，您也可以参考<block ref="0f4700d6d1275866f1a52a4d6a58d871" category="inline-link-rx"></block>。</block>
   <block id="86e30ad0a02c8fe2c3f0a07c63314b32" category="image-alt">升级SnapCenter工作流</block>
   <block id="d127c7070231e882bd97e8f2760d0a4f" category="sidebar">SnapCenter 软件文档</block>
+  <block id="c23d56866a5b11fd0d8dc189fcf21298" category="list-text"><block ref="341e3fddad4b27511133b6917a75bb8a" category="inline-link-rx"></block></block>
+  <block id="57cf9c4ee485623172a5c60cbee423a4" category="paragraph">观看 <block ref="96716f545c5cf1a209bf10c1a798ce38" category="inline-link-macro-rx"></block> 视频。</block>
 </blocks>

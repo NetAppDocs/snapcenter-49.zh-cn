@@ -137,4 +137,4 @@ SnapCenter 服务器灾难恢复支持所有插件。
 
 |===
 .相关信息
-请参见 link:https://www.youtube.com/watch?v=Nbr_wm9Cnd4&list=PLdXI3bZJEw7nofM6lN44eOe4aOSoryckg["灾难恢复 API"^] 视频。
+观看 link:https://www.youtube.com/watch?v=_8NG-tTGy8k&list=PLdXI3bZJEw7nofM6lN44eOe4aOSoryckg["灾难恢复 API"^] 视频。
