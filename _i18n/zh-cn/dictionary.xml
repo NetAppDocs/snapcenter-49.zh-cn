@@ -1118,7 +1118,6 @@ Microsoft iSCSI Initiator)连接到同一主机上的VMDK或RDM LUN
   <block id="953acf14bebe77c11e648186f3957214" category="list-text">您必须具有对 SQL Server 具有 sysadmin 权限的用户。</block>
   <block id="d165009fc919b7c43f63036983c47ae0" category="paragraph">适用于 Microsoft SQL Server 的 SnapCenter 插件使用 Microsoft VDI Framework ，这需要 sysadmin 访问权限。</block>
   <block id="9221af74572734362746f0af9104d884" category="inline-link">Microsoft 支持文章 2926557 ： SQL Server VDI 备份和还原操作需要 sysadmin 特权</block>
-  <block id="c081ea6f4c7f13224651487050d87831" category="paragraph"><block ref="c081ea6f4c7f13224651487050d87831" category="inline-link-rx"></block></block>
   <block id="6f4630c11483dcb4143ae30dadd50487" category="list-text">在 Windows 主机上安装插件时，如果您指定的凭据不是内置的，或者用户属于本地工作组用户，则必须在主机上禁用 UAC 。</block>
   <block id="9c9a08a242e9f6311be9fa5bd945d582" category="list-text">如果安装了 SnapManager for Microsoft SQL Server ，则必须已停止或禁用此服务和计划。</block>
   <block id="1931c747684bb6010ac638ae2be606b3" category="paragraph">如果您计划将备份或克隆作业导入到 SnapCenter 中，请勿卸载适用于 Microsoft SQL Server 的 SnapManager 。</block>
@@ -6725,8 +6724,6 @@ Windows主机：</block>
   <block id="e729f7885b63addbf250ef2f33329efb" category="paragraph">如果此插件无法解析服务器主机名、请登录到每个插件主机并以&lt;New IP&gt; SC_SERVER_NAME格式为新IP添加etc/host条目。
 例如：<block ref="787ca03a3d14e5cce46cedf0bba7ac2b" prefix=" " category="inline-code"></block></block>
   <block id="421f836e09d607d08dad463276b0c52e" category="paragraph">服务器 etc/host 条目将不会还原。您可以从灾难恢复备份文件夹手动还原它。</block>
-  <block id="cf6d86307a7decebf79e2175ef2bc96f" category="inline-link">如何将SnapCenter 迁移到其他服务器</block>
-  <block id="40b06602d6310e9f595ec07f57b84775" category="admonition">对于F5设置、还原操作是以独立方式执行的、您应运行一组命令重新创建F5。请参见链接：<block ref="fb5c34144d693d79610d99e63e5e4e12" category="inline-link-rx"></block></block>
   <block id="d51a9a84121a4ca319f6f0b5d481f073" category="admonition">灾难恢复还原后、系统将添加主机、但您应手动安装此插件。</block>
   <block id="2dce035ff36be1c01663c842167acf77" category="admonition">只有在安装适用于Windows的SnapCenter 插件并将NetApp LUN连接到服务器计算机时、才会还原存储库备份计划。</block>
   <block id="90969e9b7bcd66fedcf0339db7d5e13e" category="admonition">如果DLL损坏、您可以尝试修复SnapCenter服务器或更正错误的安装。</block>
@@ -8711,4 +8708,5 @@ _\https：//SnapCenter.YAML_&lt;SnapCenter_port&gt;&lt;SnapCenter_IP_address_or_
   <block id="d127c7070231e882bd97e8f2760d0a4f" category="sidebar">SnapCenter 软件文档</block>
   <block id="c23d56866a5b11fd0d8dc189fcf21298" category="list-text"><block ref="341e3fddad4b27511133b6917a75bb8a" category="inline-link-rx"></block></block>
   <block id="57cf9c4ee485623172a5c60cbee423a4" category="paragraph">观看 <block ref="96716f545c5cf1a209bf10c1a798ce38" category="inline-link-macro-rx"></block> 视频。</block>
+  <block id="cb5d59c817a7392efa454c9c69508067" category="paragraph"><block ref="cb5d59c817a7392efa454c9c69508067" category="inline-link-rx"></block></block>
 </blocks>

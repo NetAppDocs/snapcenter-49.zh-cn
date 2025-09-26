@@ -47,27 +47,17 @@ SnapCenter 灾难恢复（ DR ）功能使用 REST API 备份 SnapCenter 服务�
 +
 服务器 etc/host 条目将不会还原。您可以从灾难恢复备份文件夹手动还原它。
 
++
+*** 灾难恢复还原后、系统将添加主机、但您应手动安装此插件。
+*** 只有在安装适用于Windows的SnapCenter 插件并将NetApp LUN连接到服务器计算机时、才会还原存储库备份计划。
+*** 如果DLL损坏、您可以尝试修复SnapCenter服务器或更正错误的安装。
+*** 如果NSM或配置文件损坏、您可以卸载并重新安装相同版本的SnapCenter服务器。
+*** 如果虚拟机已损坏、请启动另一个虚拟机或同名计算机、然后安装相同版本的SnapCenter服务器。
 
 
 
 
 
-NOTE: 对于F5设置、还原操作是以独立方式执行的、您应运行一组命令重新创建F5。请参见链接： https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_Migrate_SnapCenter_migrate_to_another_Server["如何将SnapCenter 迁移到其他服务器"^]
-
-
-NOTE: 灾难恢复还原后、系统将添加主机、但您应手动安装此插件。
-
-
-NOTE: 只有在安装适用于Windows的SnapCenter 插件并将NetApp LUN连接到服务器计算机时、才会还原存储库备份计划。
-
-
-NOTE: 如果DLL损坏、您可以尝试修复SnapCenter服务器或更正错误的安装。
-
-
-NOTE: 如果NSM或配置文件损坏、您可以卸载并重新安装相同版本的SnapCenter服务器。
-
-
-NOTE: 如果虚拟机已损坏、请启动另一个虚拟机或同名计算机、然后安装相同版本的SnapCenter服务器。
 
 
 
