@@ -235,10 +235,7 @@
   <block id="50e1edb21a598f492619b01f99e77a4f" category="paragraph"><block ref="50e1edb21a598f492619b01f99e77a4f" category="inline-link-macro-rx"></block></block>
   <block id="9b51fddaf011faab92bf06f41ccf6d11" category="inline-link-macro">为 SQL Server 创建资源组并附加策略</block>
   <block id="35002a531b4134648eef7b46ee445a29" category="paragraph"><block ref="35002a531b4134648eef7b46ee445a29" category="inline-link-macro-rx"></block></block>
-  <block id="db9c751c1327ee48b470f3140421daf6" category="inline-link">由于 tcp_timeout 存在延迟，备份操作失败并显示 MySQL 连接错误</block>
-  <block id="0cd607c6c3ab41f1a5532b188171495c" category="paragraph"><block ref="0cd607c6c3ab41f1a5532b188171495c" category="inline-link-rx"></block></block>
   <block id="c473dc65af16d92c688e88cffad5b825" category="inline-link">备份失败，并显示 Windows 计划程序错误</block>
-  <block id="ee70f525f7b0b70b3e7de9d8f872cbe4" category="paragraph"><block ref="ee70f525f7b0b70b3e7de9d8f872cbe4" category="inline-link-rx"></block></block>
   <block id="60b2a4dd687e5b16ce91fc08c7273c8b" category="summary">您可以取消正在运行，已排队或无响应的备份操作。取消备份操作后，如果创建的备份未注册到 SnapCenter 服务器， SnapCenter 服务器将停止该操作并从存储中删除所有 Snapshot 副本。如果备份已注册到 SnapCenter 服务器，则即使在触发取消操作后，它也不会回滚已创建的 Snapshot 副本。</block>
   <block id="6895fc6b34ff814dd8d20f8eb70439e5" category="doc">取消适用于 Microsoft SQL Server 的 SnapCenter 插件备份操作</block>
   <block id="d15cddcc0f2911c53261943c85948fab" category="list-text">要取消还原操作，您必须以 SnapCenter 管理员或作业所有者的身份登录。</block>
@@ -401,7 +398,6 @@
   <block id="057a891f1c6d5f4aa0480b5f01c6bbc7" category="inline-link">MetroCluster 故障转移后无法检测 SnapMirror 或 SnapVault 关系</block>
   <block id="656764dc4fc9063500ad9c4607e32b3b" category="paragraph"><block ref="656764dc4fc9063500ad9c4607e32b3b" category="inline-link-rx"></block></block>
   <block id="f6e291f8da5e2bfb20622fac181e8aca" category="list-text">如果要备份 VMDK 上的应用程序数据，并且适用于 VMware vSphere 的 SnapCenter 插件的 Java 堆大小不够大，则备份可能会失败。要增加 Java 堆大小，请找到脚本文件 /opt/netapp/init_scripts/scvservice 。在此脚本中、将显示<block ref="f751567fc5d2c300402db2d50de19910" prefix=" " category="inline-code"></block> 命令启动SnapCenter VMware插件服务。将该命令更新为以下内容：<block ref="d66632e2d1ccce4227411d877d93c152" prefix=" " category="inline-code"></block>。</block>
-  <block id="393997bd3b722d52ae03ce598aa5cfec" category="paragraph"><block ref="393997bd3b722d52ae03ce598aa5cfec" category="inline-link-rx"></block></block>
   <block id="b97931d91e5908b44999bbc951cbee1f" category="summary">您可以从主存储或二级存储上的备份副本还原 SQL Server 数据库。除了数据库的原始位置之外，您还可以将数据库还原到其他目标，从而可以选择满足要求的目标。</block>
   <block id="f773433327b73966f565bf778dba8fce" category="doc">还原操作的源和目标</block>
   <block id="9f848691835222d0cd69e4d0dc96d02a" category="section-title">还原操作的源</block>
@@ -1157,10 +1153,7 @@ Microsoft iSCSI Initiator)连接到同一主机上的VMDK或RDM LUN
   <block id="8a2bd81e968aaadb6ec10a1b58f541cc" category="inline-link-macro">备份 SQL Server 数据库，实例或可用性组</block>
   <block id="38c78702a48e457f5ef291281168432e" category="paragraph"><block ref="38c78702a48e457f5ef291281168432e" category="inline-link-macro-rx"></block></block>
   <block id="f9db2c2c51ac713541e90ff79219156d" category="paragraph"><block ref="f9db2c2c51ac713541e90ff79219156d" category="inline-link-macro-rx"></block></block>
-  <block id="68f8e37f5b3d7c3c6c34a481b33a736f" category="inline-link">使用默认 tcp_timeout 值时，克隆操作可能会失败或需要较长时间才能完成</block>
-  <block id="f7e7f0dd9d36aec3d609775de2dbbd0b" category="paragraph"><block ref="f7e7f0dd9d36aec3d609775de2dbbd0b" category="inline-link-rx"></block></block>
   <block id="1e9ab426973a56020f8d1db85cb07f06" category="inline-link">故障转移集群实例数据库克隆失败</block>
-  <block id="2df5362c7aa8c12a0dd2f1b211cdf61d" category="paragraph"><block ref="2df5362c7aa8c12a0dd2f1b211cdf61d" category="inline-link-rx"></block></block>
   <block id="98d00f0950d49399aca5b7e5b8865719" category="summary">适用于 Microsoft SQL Server 的 SnapCenter 插件需要事务日志备份来执行最新的还原操作，以便将数据库还原到两个完整备份之间的时间。</block>
   <block id="fdc4a4ab9ed4ec8a0e816124044ffbb2" category="doc">在源存储系统上保留事务日志备份的时间</block>
   <block id="fd97a5c736cbe90079f5f9ad13506469" category="paragraph">例如，如果适用于 SQL Server 的插件在上午 8 ： 00 进行完整备份而另一个完整备份则在下午 5 ： 00 进行，它可以使用最新的事务日志备份将数据库还原到上午 8 ： 00 之间的任何时间和下午 5 ： 00如果事务日志不可用，则适用于 SQL Server 的插件只能执行时间点还原操作，从而将数据库还原到适用于 SQL Server 的插件完成完整备份时为止。</block>
@@ -1172,7 +1165,6 @@ Microsoft iSCSI Initiator)连接到同一主机上的VMDK或RDM LUN
   <block id="70124670f70878681ab7bb78e2860796" category="image-alt">克隆工作流图</block>
   <block id="a121a292ca8a39c5591cdcc69d0f0ff8" category="paragraph"><block ref="a121a292ca8a39c5591cdcc69d0f0ff8" category="inline-link-macro-rx"></block></block>
   <block id="b5fb765366530fd4f75c7c5c651544bd" category="paragraph"><block ref="b5fb765366530fd4f75c7c5c651544bd" category="inline-link-macro-rx"></block></block>
-  <block id="5f2b3d8994098e5cded686a40b8bb7c9" category="paragraph"><block ref="5f2b3d8994098e5cded686a40b8bb7c9" category="inline-link-macro-rx"></block></block>
   <block id="39f61b5119a8f1055ebde041f182fd5c" category="summary">通过 Windows Server 2012 或更高版本，您可以创建组托管服务帐户（ GMSA\ ），以便从受管域帐户自动管理服务帐户密码。</block>
   <block id="c6750b3c76b6abfa242d19dc98ef1082" category="doc">在 Windows Server 2012 或更高版本上配置 GMSA</block>
   <block id="b3c3961c44cb62a9ae4273719a69e251" category="paragraph">通过 Windows Server 2012 或更高版本，您可以创建组托管服务帐户（ GMSA ），以便从受管域帐户自动管理服务帐户密码。</block>
@@ -1221,7 +1213,6 @@ Microsoft iSCSI Initiator)连接到同一主机上的VMDK或RDM LUN
   <block id="95d04783b89b5d5f8a4c905e6a139950" category="paragraph">有关部署的信息，请参见<block ref="09fdd78e4c4f2997a9baa6b6e4423d52" category="inline-link-rx"></block>。</block>
   <block id="0a43bd1f35095f6ca081444f65372381" category="section-title">部署 CA 证书</block>
   <block id="c9abc3786b4bb68c9d780c7e265731ff" category="inline-link">创建或导入 SSL 证书</block>
-  <block id="77e6d176ef9b9d439f75a9636390005d" category="paragraph">要使用适用于 VMware vSphere 的 SnapCenter 插件配置 CA 证书，请参见<block ref="1b5e247395791063ff5d33fa4a1ba4ec" category="inline-link-rx"></block>。</block>
   <block id="3228309100966454e78a162d4ba9bd75" category="section-title">配置此 CRL 文件</block>
   <block id="456dce50d13fcf7c2c4881e39c114254" category="paragraph">适用于 VMware vSphere 的 SnapCenter 插件会在预先配置的目录中查找此 CRL 文件。适用于 VMware vSphere 的 SnapCenter 插件的 CRL 文件的默认目录为： _/opt/netapp/config/CRL_ 。</block>
   <block id="1b782c06b199c89589ed8bcf1a6ca9ab" category="paragraph">您可以在此目录中放置多个 CRL 文件。系统将根据每个 CRL 验证传入的证书。</block>
@@ -7013,9 +7004,6 @@ _\https：//SnapCenter.YAML_&lt;SnapCenter_port&gt;&lt;SnapCenter_IP_address_or_
   <block id="b88dbedd8fcea13adf629d85780a25e4" category="list-text">适用于 Windows 的插件不支持在 Microsoft 集群中的虚拟机上运行 MPIO 。</block>
   <block id="5010ac065b072d3a5a66d4913af22358" category="section-title">创建共享 FC RDM LUN</block>
   <block id="10680a7aa79949d8b454b29a782cc64a" category="paragraph">在使用 FC RDM LUN 在 Microsoft 集群中的节点之间共享存储之前，必须先创建共享仲裁磁盘和共享存储磁盘，然后将其添加到集群中的两个虚拟机。</block>
-  <block id="cbdb6828febec04786f22df9a1ccc748" category="inline-link">跨物理主机的集群虚拟机</block>
-  <block id="343e62dffb88999e9c503088341e1fc0" category="paragraph">共享磁盘不是使用适用于 Windows 的插件创建的。您应创建共享 LUN ，然后将其添加到集群中的每个虚拟机。
-有关信息，请参见<block ref="4339506e2feb8115940eea5a6e9ba248" category="inline-link-rx"></block>。</block>
   <block id="c44898f41e877f5863f509561f82e262" category="summary">您可以配置 Microsoft 网络负载平衡（ NLB ）以设置 SnapCenter 高可用性。</block>
   <block id="2d5db85f748f26999514af33f7603cc0" category="doc">手动配置 Microsoft 网络负载平衡器</block>
   <block id="5b226c362b407740af9b9e11ba12b385" category="paragraph">您可以配置 Microsoft 网络负载平衡（ NLB ）以设置 SnapCenter 高可用性。在 SnapCenter 4.2 中，您应在 SnapCenter 安装之外手动配置 NLB 以实现高可用性。</block>
@@ -7622,9 +7610,7 @@ _\https：//SnapCenter.YAML_&lt;SnapCenter_port&gt;&lt;SnapCenter_IP_address_or_
   <block id="ac91c641781bd7c7379113e123abc706" category="doc">启用基于证书的身份验证</block>
   <block id="2deb2b431122c2428813248c5cc7e3cf" category="paragraph">要为SnapCenter服务器和Windows插件主机启用基于证书的身份验证、请运行以下PowerShell cmdlet。  对于Linux插件主机、启用双向SSL后、将启用基于证书的身份验证。</block>
   <block id="012d451c2966c8058914f66afd3ff9be" category="list-text">启用基于客户端证书的身份验证：</block>
-  <block id="c7414a7d4890863a34509bebe1bd9225" category="paragraph"><block ref="a578dd94961bb2b0ce287d29a112740b" prefix="" category="inline-code"></block><block ref="e685e5103f8306754d61ec1a0da15686" prefix=" " category="inline-code"></block><block ref="a71cdd4660400fab236be52b25300411" prefix=" " category="inline-code"></block></block>
   <block id="8b5db05d124326542535790d2a1a0411" category="list-text">禁用基于客户端证书的身份验证：</block>
-  <block id="b5cfca9930b60b6f87f38ad0e8d31765" category="paragraph"><block ref="ee29fb805334372351c3e459eaf40ac3" prefix="" category="inline-code"></block><block ref="e685e5103f8306754d61ec1a0da15686" prefix=" " category="inline-code"></block><block ref="b1b73520f4b4ea4d2583cc59029bbe0d" prefix=" " category="inline-code"></block></block>
   <block id="5fd3d0b8e71c4f64cfbad31e3fde1863" category="summary">在安装 SnapCenter 服务器之前，您应熟悉空间和规模估算要求。您还应应用可用的系统和安全更新。</block>
   <block id="18cd7192921dd5ac27a1a7c5ef795c20" category="doc">空间和规模估算要求</block>
   <block id="3dbe205a1db3f8f677f2e971edc8976d" category="paragraph">操作系统仅支持英语，德语，日语和简体中文版。</block>
@@ -8709,4 +8695,13 @@ _\https：//SnapCenter.YAML_&lt;SnapCenter_port&gt;&lt;SnapCenter_IP_address_or_
   <block id="57cf9c4ee485623172a5c60cbee423a4" category="paragraph">观看 <block ref="96716f545c5cf1a209bf10c1a798ce38" category="inline-link-macro-rx"></block> 视频。</block>
   <block id="cb5d59c817a7392efa454c9c69508067" category="paragraph"><block ref="cb5d59c817a7392efa454c9c69508067" category="inline-link-rx"></block></block>
   <block id="ea1c96f839915f73d25b910bbc92b734" category="list-text">位于ONTAP FAS、 AFF或ASA主系统和辅助系统上的数据，使用NetApp备份和恢复集成保护到云中的对象和归档存储</block>
+  <block id="92f7e9adcc0061bde4c2abd78f00e01e" category="paragraph">要使用 SnapCenter Plug-in for VMware vSphere 配置 CA 证书，请参见<block ref="e0ef04da7ad7ee6e29cb49ed5497582e" category="inline-link-rx"></block>。</block>
+  <block id="1e70ac4737c2e839c6fd901789e3bafb" category="paragraph">共享磁盘不是使用 Plug-in for Windows 创建的。您应该创建共享 LUN，然后将其添加到集群中的每个虚拟机。</block>
+  <block id="ae0aa1a81eb18e69d5fc662eaee0efd5" category="inline-link">Broadcom 技术文档</block>
+  <block id="e3b8e6a8b23425a59add498ed0e47659" category="paragraph">请参阅<block ref="94f03a61d7283013b50d8cc8e88c9fd8" category="inline-link-rx"></block>并搜索有关跨物理主机群集虚拟机以及为 Microsoft 群集创建共享 FC RDM LUN 的文档。</block>
+  <block id="0ff275ffe02e672fcd7c5215c9cbcfb6" category="paragraph"><block ref="a578dd94961bb2b0ce287d29a112740b" prefix="" category="inline-code"></block><block ref="e685e5103f8306754d61ec1a0da15686" prefix=" " category="inline-code"></block><block ref="0897acf49c7c1ea9f76efe59187aa046" prefix=" " category="inline-code"></block></block>
+  <block id="11428fc511268a2c63fa0e7ebcb2530d" category="paragraph"><block ref="ee29fb805334372351c3e459eaf40ac3" prefix="" category="inline-code"></block><block ref="e685e5103f8306754d61ec1a0da15686" prefix=" " category="inline-code"></block><block ref="0897acf49c7c1ea9f76efe59187aa046" prefix=" " category="inline-code"></block></block>
+  <block id="fb322b1c90de9bc9209933a55dc7c3a1" category="paragraph"><block ref="fb322b1c90de9bc9209933a55dc7c3a1" category="inline-link-rx"></block></block>
+  <block id="76d78c694f90915981830809ea4ed0ea" category="paragraph"><block ref="76d78c694f90915981830809ea4ed0ea" category="inline-link-rx"></block></block>
+  <block id="654bb6446b6bf43b65f5a763bbc17afe" category="paragraph"><block ref="654bb6446b6bf43b65f5a763bbc17afe" category="inline-link-rx"></block></block>
 </blocks>
